@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faq Accordion</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    
+</head>
+<body>
+    <div id="wrap">
+        <div id="main">
+            <!--this div for small screen logo -->
+            <div id="img" class="d-md-none">
+                <img id="logo_shadow" src="images/bg-pattern-mobile.svg" alt="images">
+                <img id="faq_logo" src="images/illustration-woman-online-mobile.svg" alt="images">
+            </div>
+
+
+            <!--this div for big screen logo -->
+            <div id="large_logo_div" class=" d-none d-md-block">
+                <img id="large_img" src="images/illustration-woman-online-desktop.svg" alt="images">
+                <img id="large_box" src="images/illustration-box-desktop.svg" alt="images">
+                <img id="large_shadow" src="images/bg-pattern-mobile.svg" alt="images">
+                
+            </div>
+
+
+            <!--this div for the faq section itself -->
+            <div id="faqs_sec">
+                <h2>FAQ</h2>
+
+                <div id="faqdiv1" class="allfaq">
+                    <h5 onclick="faqOne('faqdiv1')" >How many team members can I invite? <img src="images/icon-arrow-down.svg" alt="icon-arrow-down"></h5>
+                    <p class="ans_para">You can invite up to 2 additional users on the Free plan.  There is no limit on team members for the Premium plan.</p>
+                    
+                </div>
+                <div id="faqdiv2" class="allfaq">
+                    <h5 onclick="faqOne('faqdiv2')">What is the maximum file upload size? <img src="images/icon-arrow-down.svg" alt="icon-arrow-down"></h5>
+                    <p class="ans_para">No more than 2GB. All files in your account must fit your allotted storage space.</p>
+
+                </div>
+                <div id="faqdiv3" class="allfaq">
+                    <h5 onclick="faqOne('faqdiv3')">How do I reset my password? <img src="images/icon-arrow-down.svg" alt="icon-arrow-down"></h5>
+                    <p class="ans_para">Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you</p>
+                    
+                </div>
+                <div id="faqdiv4" class="allfaq">
+                    <h5 onclick="faqOne('faqdiv4')">Can I cancel my subscription? <img src="images/icon-arrow-down.svg" alt="icon-arrow-down"></h5>
+                    <p class="ans_para">Yes! Send us a message and we’ll process your request no questions asked.</p>
+                   
+                </div>
+                <div id="faqdiv5" class="allfaq">
+                    <h5 onclick="faqOne('faqdiv5')">Do you provide additional support? <img src="images/icon-arrow-down.svg" alt="icon-arrow-down"></h5>
+                    <p class="ans_para"p>Chat and email support is available 24/7. Phone lines are open during normal business hours</p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/faq.js"></script>
+</html>
+
+
+<!--
+    <div>
+                    <h5>How many team members can I invite? <span><a id="control_arrow"> <img src="images/icon-arrow-down.svg" alt="icon-arrow-down"></a></span></h5>
+                    <p>You can invite up to 2 additional users on the Free plan.  There is no limit on team members for the Premium plan.</p>
+                </div>
+                <div>
+                    <h5>What is the maximum file upload size?<span><a id="control_arrow"> <img src="images/icon-arrow-down.svg" alt="icon-arrow-down"></a></span></h5>
+                    <p>No more than 2GB. All files in your account must fit your allotted storage space.</p>
+                </div>
+                <div>
+                    <h5>How do I reset my password?<span><a id="control_arrow"> <img src="images/icon-arrow-down.svg" alt="icon-arrow-down"></a></span></h5>
+                    <p>Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you</p>
+                </div>
+                <div>
+                    <h5>Can I cancel my subscription?<span><a id="control_arrow"> <img src="images/icon-arrow-down.svg" alt="icon-arrow-down"></a></span></h5>
+                    <p>Yes! Send us a message and we’ll process your request no questions asked.</p>
+                </div>
+                <div>
+                    <h5>Do you provide additional support?<span><a id="control_arrow"> <img src="images/icon-arrow-down.svg" alt="icon-arrow-down"></a></span></h5>
+                    <p>Chat and email support is available 24/7. Phone lines are open during normal business hours</p>
+                </div>
+            </div>
+-->

@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+#wrap{
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    background-repeat: no-repeat;
+    padding: 10px 30px 0;
+    height: 100vh;
+    
+}
+
+
+
+#main{
+    width: 100%;
+    background-color: white;
+    padding: 25px;
+    margin-top: 110px;
+    border-radius: 30px;
+    text-align: center;
+    position: relative;
+}
+
+#logo_shadow{
+    width: 200px;
+    position: absolute;
+    top: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#faq_logo{
+    width: 200px;
+    position: absolute;
+    top: -90px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#faqs_sec{
+    text-align: center;
+    margin-top: 100px;
+}
+
+#faqs_sec h2{
+    margin-bottom: 20px;
+}
+
+
+#faqs_sec div{
+    text-align: left;
+    padding: 10px 0;
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+    
+}
+
+#faqs_sec div h5{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+
+#faqs_sec div h5:hover{
+    color: red;
+}
+
+#faqs_sec div h5 img{
+    transition: all 1s;
+}
+
+p.ans_para{
+    margin: 5px 0;
+    width: 90%;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*for the responsieve screen of sm and above*/
+@media screen and (min-width:576px){
+
+    #faq_logo{
+        width: 300px;
+        top: -130px;
+    }
+    
+    #logo_shadow{
+        width: 300px;
+    }
+
+    #faqs_sec{
+        margin-top: 140px;
+    }
+    
+}
+
+
+/*for the responsieve screen of md and above*/
+@media screen and (min-width:768px){
+
+    #main{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        max-width: 900px;
+        margin: auto;
+        padding: 50px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    #faqs_sec{
+        width: 50%;
+        border: 1px solid red;
+        margin: 0;
+    }
+
+    #faqs_sec div h5:hover{
+        color: red !important;
+    }
+
+
+    #large_logo_div{
+        border: 1px solid red;
+        width: 50%;
+        margin: 0;
+    }
+
+    #large_img{
+        width: 50%;
+        position: absolute;
+        left: -10%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    #large_box{
+        width: 40%;
+        position: absolute;
+        
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 9999;
+    }
+
+    #large_shadow{
+        position: absolute;
+        left: -10%;
+        
+    }
+    
+    
+    
+}
